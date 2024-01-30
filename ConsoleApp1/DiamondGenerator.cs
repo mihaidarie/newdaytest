@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         public void GenerateModel()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

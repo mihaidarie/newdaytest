@@ -3,14 +3,14 @@ using ConsoleApp1;
 namespace TestProject1
 {
     [TestClass]
-    public class UnitTest1
+    public class DiamondGeneratorTests
     {
-        private static DiamondPrinter testedObject;
+        private static DiamondGenerator testedObject;
 
         [ClassInitialize()]
         public static void ClassInit(TestContext context)
         {
-            testedObject = new DiamondPrinter();
+            testedObject = new DiamondGenerator();
         }
 
         [TestMethod]

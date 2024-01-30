@@ -1,4 +1,5 @@
 using ConsoleApp1;
+using FluentAssertions;
 using System.Collections.Generic;
 
 namespace TestProject1
@@ -8,6 +9,17 @@ namespace TestProject1
     {
         private static DiamondGenerator? testedObject;
 
+        private static IEnumerable<object[]> TestData
+        {
+            get
+            {
+                return new[]
+                {
+                    new object[] { 'A', new List<List<char>> { new List<char> { 'A' } } }
+                };
+            }
+        }
+
         [ClassInitialize()]
         public static void ClassInit(TestContext context)
         {
@@ -15,9 +27,12 @@ namespace TestProject1
         }
 
         [TestMethod]
-        public void GenerateModel()
+        [DynamicData(nameof(TestData))]
+        public void GenerateModel(char input, List<List<char>> expected)
         {
             IList<IList<char>> result = testedObject.GenerateModel();
+
+            result.Should().BeEquivalentTo(expected);
         }
     }
 }

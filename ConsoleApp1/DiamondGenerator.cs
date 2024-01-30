@@ -8,5 +8,9 @@ namespace ConsoleApp1
 {
     public class DiamondGenerator
     {
+        public void GenerateModel()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

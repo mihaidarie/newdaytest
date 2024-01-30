@@ -1,6 +1,5 @@
 using ConsoleApp1;
 using FluentAssertions;
-using System.Collections.Generic;
 
 namespace TestProject1
 {
@@ -45,6 +44,20 @@ namespace TestProject1
                             new List<char> { ' ', 'C', ' ', ' ', ' ', 'C', ' ' },
                             new List<char> { ' ', ' ', 'B', ' ', 'B', ' ', ' ' },
                             new List<char> { ' ', ' ', ' ', 'A', ' ', ' ', ' ' }
+                        }
+                    },
+                    new object[] { 'Z',
+                        new List<List<char>>
+                        {
+                            new List<char> { ' ', ' ',' ', ' ', ' ', ' ', ' ', 'A', ' ', ' ', ' ', ' ', ' ', ' ', ' ' },
+                            new List<char> { ' ', ' ',' ', ' ', ' ', ' ', 'B', ' ', 'B', ' ', ' ', ' ', ' ', ' ', ' ' },
+                            new List<char> { ' ', ' ',' ', ' ', ' ', 'C', ' ', ' ', ' ', 'C', ' ', ' ', ' ', ' ', ' ' },
+                            new List<char> { ' ', ' ',' ', ' ', 'D', ' ', ' ', ' ', ' ', ' ', 'D', ' ', ' ', ' ', ' ' },
+                            new List<char> { ' ', ' ',' ', 'E', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'E', ' ', ' ', ' ' },
+                            new List<char> { ' ', ' ','F', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'F', ' ', ' ' },
+                            new List<char> { ' ', 'H', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'H', ' ' },
+                            new List<char> { 'G', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', 'G' },
+
                         }
                     }
                 };

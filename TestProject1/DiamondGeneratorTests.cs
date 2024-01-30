@@ -30,7 +30,7 @@ namespace TestProject1
         [DynamicData(nameof(TestData))]
         public void GenerateModel(char input, List<List<char>> expected)
         {
-            IList<IList<char>> result = testedObject.GenerateModel();
+            IList<IList<char>> result = testedObject.GenerateModel(input);
 
             result.Should().BeEquivalentTo(expected);
         }

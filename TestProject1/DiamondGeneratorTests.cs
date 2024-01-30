@@ -18,13 +18,35 @@ namespace TestProject1
                     new object[] { null, new List<List<char>> { new List<char> { } } },
                     new object[] { 'A', new List<List<char>> { new List<char> { 'A' } } },
                     new object[] { 'B',
-                        new List<List<char>> 
+                        new List<List<char>>
                         {
-                            new List<char> { '_', 'A', '_' },
-                            new List<char> { 'B', '_', 'B' },
-                            new List<char> { '_', 'A', '_' }
+                            new List<char> { ' ', 'A', ' ' },
+                            new List<char> { 'B', ' ', 'B' },
+                            new List<char> { ' ', 'A', ' ' }
                         }
                     },
+                    new object[] { 'C',
+                        new List<List<char>>
+                        {
+                            new List<char> { ' ', ' ', 'A', ' ', ' ' },
+                            new List<char> { ' ', 'B', ' ', 'B', ' ' },
+                            new List<char> { 'C', ' ', ' ', ' ', 'C' },
+                            new List<char> { ' ', 'B', ' ', 'B', ' ' },
+                            new List<char> { ' ', ' ', 'A', ' ', ' ' }
+                        }
+                    },
+                    new object[] { 'D',
+                        new List<List<char>>
+                        {
+                            new List<char> { ' ', ' ', ' ', 'A', ' ', ' ', ' ' },
+                            new List<char> { ' ', ' ', 'B', ' ', 'B', ' ', ' ' },
+                            new List<char> { ' ', 'C', ' ', ' ', ' ', 'C', ' ' },
+                            new List<char> { 'D', ' ', ' ', ' ', ' ', ' ', 'D' },
+                            new List<char> { ' ', 'C', ' ', ' ', ' ', 'C', ' ' },
+                            new List<char> { ' ', ' ', 'B', ' ', 'B', ' ', ' ' },
+                            new List<char> { ' ', ' ', ' ', 'A', ' ', ' ', ' ' }
+                        }
+                    }
                 };
             }
         }

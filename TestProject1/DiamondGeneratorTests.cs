@@ -1,4 +1,5 @@
 using ConsoleApp1;
+using System.Collections.Generic;
 
 namespace TestProject1
 {
@@ -14,9 +15,9 @@ namespace TestProject1
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void GenerateModel()
         {
-            testedObject.GenerateModel();
+            IList<IList<char>> result = testedObject.GenerateModel();
         }
     }
 }

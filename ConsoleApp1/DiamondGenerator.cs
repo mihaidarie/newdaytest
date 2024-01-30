@@ -2,7 +2,7 @@
 {
     public class DiamondGenerator
     {
-        public IList<IList<char>> GenerateModel()
+        public IList<IList<char>> GenerateModel(char input)
         {
             return new List<IList<char>>();
         }

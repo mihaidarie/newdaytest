@@ -4,7 +4,12 @@
     {
         public IList<IList<char>> GenerateModel(char input)
         {
-            if(input == 'A')
+            if (input == default)
+            {
+                return new List<IList<char>> { new List<char> { } };
+            }
+
+            if (input == 'A')
             {
                 return new List<IList<char>> { new List<char> { 'A' } };
             }

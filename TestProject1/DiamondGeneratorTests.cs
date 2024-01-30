@@ -15,6 +15,7 @@ namespace TestProject1
             {
                 return new[]
                 {
+                    new object[] { null, new List<List<char>> { new List<char> { } } },
                     new object[] { 'A', new List<List<char>> { new List<char> { 'A' } } }
                 };
             }

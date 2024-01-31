@@ -31,6 +31,8 @@
                 return new List<IList<char>> { new List<char> { } };
             }
 
+            input = input.ToString().ToUpper().ToCharArray()[0];
+
             if (input == alphabet.ElementAt(0))
             {
                 return new List<IList<char>> { new List<char> { 'A' } };

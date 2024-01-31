@@ -1,8 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConsoleApp1;
 
-Console.WriteLine("Hello, World!");
-
 Console.WriteLine("What's your favorite alphabet char?");
 
 var input = Console.ReadKey();

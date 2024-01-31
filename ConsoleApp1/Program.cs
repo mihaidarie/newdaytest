@@ -9,11 +9,31 @@ var diamondRepresentation = new DiamondGenerator().GenerateModel(input.KeyChar);
 
 Console.WriteLine("\n");
 
+Console.WriteLine("Use _ to display the diamond? Y/N");
+
+var useDash = Console.ReadKey().KeyChar.ToString().ToUpper() == "Y";
+
+Console.WriteLine("\n");
+
 foreach (var item in diamondRepresentation)
 {
     foreach (var item2 in item)
     {
-        Console.Write(item2);
+        if (useDash)
+        {
+            if (item2 == ' ')
+            {
+                Console.Write('_');
+            }
+            else
+            {
+                Console.Write(item2);
+            }
+        }
+        else
+        {
+            Console.Write(item2);
+        }
     }
 
     Console.WriteLine("\n");
